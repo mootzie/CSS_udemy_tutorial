@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Antonio', sans-serif;
+    margin: 0;
+}
+
+.section-title {
+    color: #2ddf5c;
+}
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+
+/* h1 {
+    font-family: sans-serif;
+} */
+
+body,
+html {
+    height: 100%;
+}
+
+.cta {
+    background-color: #2ddf5c;
+    padding: 10px 10px;
+}
+
+
+/* The hero image */
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://plus.unsplash.com/premium_photo-1670263570259-53bc45f3b4d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60");
+    /* Set a specific height */
+    height: 50%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* Place text in the middle of the image */
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #0e4f41;
+}
+
+.container .logo a {
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.container ul {
+    display: flex;
+    list-style: none;
+    padding: 8px 16px;
+}
+
+.container ul li a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.plan {
+    background-color: #d5ffdc;
+    text-align: center;
+    padding: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.plan-title {
+    text-align: center;
+}
+
+.cta:hover {
+    background-color: #20a844;
+}
+
+.container a:hover {
+    color: antiquewhite;
+}
+
+.plan--highlighted {
+    background-color: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(158, 158, 158, 0.5);
+}
+
+.plan__annotation {
+    background: white;
+    color: #19b84c;
+    padding: 8px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.plan ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.plan ul li {
+    margin: 8px 0;
+}
+
+.plan__price {
+    color: rgb(112, 112, 112);
+}
+
+.plan__title {
+    color: #0e4f41;
+}
+
+.plan--highlighted .plan__price {
+    color: #0e4f1f;
+}
+
+.plan--highlighted .plan__title {
+    color: white;
+}
+
+.button {
+    background-color: #0e4f1f;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font: inherit;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #093314;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: white;
+    color: #093314;
+}
+
+.choose_title {
+    text-align: center;
+    color: white;
+    margin: 32px;
+    font-size: 40px;
+}
+
+#key-features {
+    background: #ff1b68;
+    margin-top: 80px;
+    padding: 16px;
+    vertical-align: top;
+}
+
+.features {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+}
+
+.feature {
+    display: inline-block;
+    color: white;
+    font: bold;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+}
+
+.feature-description {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+.key-feature__image {
+    background-color: #fab5cc;
+    width: 128px;
+    border-radius: 50%;
+    border: 1px solid rgb(248, 248, 248);
+    height: 128px;
+    margin: auto;
+}
+
+.plans {
+    text-align: center;
+}
