@@ -67,7 +67,13 @@ html {
     vertical-align: middle;
     align-items: center;
     font-family: sans-serif;
-    background-color: #0e4f41;
+    background-color: #000000;
+    top: 0;
+    margin-bottom: 40px;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .container .logo a {
@@ -75,12 +81,14 @@ html {
     color: white;
     text-decoration: none;
     font-size: 3rem;
+    /* margin-left: 20rem; */
 }
 
 .container ul {
     display: flex;
     list-style: none;
     padding: 8px 16px;
+    /* margin-right: 20rem; */
 }
 
 .container ul li a {
@@ -182,10 +190,11 @@ html {
 }
 
 #key-features {
-    background: #ff1b68;
+    background: #37cc8e;
     margin-top: 80px;
     padding: 16px;
     vertical-align: top;
+    height: 400px;
 }
 
 .features {
@@ -228,16 +237,21 @@ html {
 }
 
 .main-footer {
-    background-color: #0e4f41;
+    background-color: #020202;
     color: white;
     text-align: center;
     padding: 32px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
 }
 
 .main-footer ul {
     margin-top: 0;
     list-style: none;
     display: inline-block;
+    position: relative;
+    vertical-align: middle;
 }
 
 .main-footer a {
@@ -247,4 +261,67 @@ html {
 
 .main-footer ul li {
     display: inline-block;
+}
+
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    height: 30%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    vertical-align: middle;
+}
+
+.modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.modal__actions {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.modal__action {
+    border: 1px solid #0e4f1f;
+    background: #0e4f1f;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.modal__action:hover,
+.modal__action:active {
+    background-color: #2ddf5c;
+    border-color: #2ddf5c;
+}
+
+.modal__action--negative {
+    background: red;
+    border-color: red;
+}
+
+.modal__action--negative:hover,
+.modal__action--negative:active {
+    background: #ff5454;
+    border-color: #ff5454;
 }
